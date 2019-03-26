@@ -1,4 +1,4 @@
-package tech.alvarez.pokedex;
+package com.vlopes.snacks.utiils;
 
 public class Constants {
 

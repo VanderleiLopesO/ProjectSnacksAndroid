@@ -1,11 +1,7 @@
-package tech.alvarez.pokedex.models;
+package com.vlopes.snacks.models;
 
 import java.util.ArrayList;
 
-/**
- * Created by Daniel Alvarez on 28/7/16.
- * Copyright © 2016 Alvarez.tech. All rights reserved.
- */
 public class SnackResponse {
 
     private ArrayList<Snack> results;

@@ -1,10 +1,12 @@
-package tech.alvarez.pokedex;
+package com.vlopes.snacks.api.repository;
 
 import java.util.List;
 
-import retrofit2.Call;
-import tech.alvarez.pokedex.models.Snack;
-import tech.alvarez.pokedex.pokeapi.UserApi;
+import rx.Observable;
+
+import com.vlopes.snacks.api.ApiProvider;
+import com.vlopes.snacks.models.Snack;
+import com.vlopes.snacks.api.UserApi;
 
 public class SnackRepositoryImpl implements SnackRepository {
 
@@ -19,7 +21,7 @@ public class SnackRepositoryImpl implements SnackRepository {
     }
 
     @Override
-    public Call<List<Snack>> getSnacks() {
+    public Observable<List<Snack>> getSnacks() {
         return mApi.getSnacks();
     }
 }
